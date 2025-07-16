@@ -184,8 +184,23 @@ footer input[type="text"], input[type="email"], textarea{
     display: none;
 }
 @media screen  and (max-width: 576px){
-    .skills-container, .resume-container, footer, .about-items{
+    .skills-container, .resume-container, footer, .about-items, .banner, nav, nav>ul{
         flex-direction: column;
+    }
+    nav>ul{
+        gap: 10px;
+    }
+    .banner{
+        margin: 20px;
+    }
+    .banner-profile-pic{
+        width: 100%;
+    }
+    .header{
+        background-image: none;
+    }
+    .btn-primary{
+        margin-bottom: 20px;
     }
     footer, .about{
         padding: 20px;
@@ -197,4 +212,10 @@ footer input[type="text"], input[type="email"], textarea{
     width: calc(100%-40px);
 }
  
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .banner{
+        flex-direction: column;
+    }
 }
